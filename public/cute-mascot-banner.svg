@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#F0F7FF"/>
+    
+    <!-- 装飾的な波線 -->
+    <path d="M0 350 Q 200 300, 400 350 Q 600 400, 800 350" fill="#E6F0FF"/>
+    
+    <!-- くまのキャラクター本体 -->
+    <circle cx="400" cy="200" r="100" fill="#8B4513"/> <!-- 顔の輪郭 -->
+    
+    <!-- 耳 -->
+    <circle cx="320" cy="120" r="40" fill="#8B4513"/>
+    <circle cx="480" cy="120" r="40" fill="#8B4513"/>
+    <circle cx="320" cy="120" r="25" fill="#FFA07A"/>
+    <circle cx="480" cy="120" r="25" fill="#FFA07A"/>
+    
+    <!-- 目 -->
+    <circle cx="360" cy="180" r="15" fill="white"/>
+    <circle cx="440" cy="180" r="15" fill="white"/>
+    <circle cx="360" cy="180" r="8" fill="black"/>
+    <circle cx="440" cy="180" r="8" fill="black"/>
+    <circle cx="365" cy="175" r="4" fill="white"/>
+    <circle cx="445" cy="175" r="4" fill="white"/>
+    
+    <!-- 鼻 -->
+    <circle cx="400" cy="210" r="15" fill="black"/>
+    
+    <!-- 笑顔 -->
+    <path d="M360 240 Q 400 270, 440 240" fill="none" stroke="black" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- 頬の赤み -->
+    <circle cx="340" cy="220" r="20" fill="#FFB6C1" opacity="0.5"/>
+    <circle cx="460" cy="220" r="20" fill="#FFB6C1" opacity="0.5"/>
+    
+    <!-- 手を振るポーズ -->
+    <path d="M320 280 Q 300 320, 280 340" fill="none" stroke="#8B4513" stroke-width="20" stroke-linecap="round"/>
+    
+    <!-- 装飾的な要素 -->
+    <circle cx="100" cy="100" r="20" fill="#FFB6C1" opacity="0.5"/>
+    <circle cx="700" cy="150" r="25" fill="#87CEEB" opacity="0.5"/>
+    <circle cx="150" cy="300" r="15" fill="#98FB98" opacity="0.5"/>
+    <circle cx="650" cy="280" r="18" fill="#DDA0DD" opacity="0.5"/>
+</svg>

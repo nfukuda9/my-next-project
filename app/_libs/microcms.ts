@@ -1,3 +1,6 @@
+export type Category = {
+  name: string;
+}
 export type News = {
     id: string;
     title: string;
@@ -8,6 +11,3 @@ export type News = {
     createAt: string;
 }
 
-export type Category = {
-    name: string;
-}

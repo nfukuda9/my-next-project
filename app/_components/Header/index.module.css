@@ -4,7 +4,7 @@
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: spance-between;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -15,6 +15,13 @@
 .logo {
     height: 24px;
     width: auto;
+}
+
+
+.items {
+    display: flex;
+    color: #fff;
+    gap: 40px
 }
 
 @media (max-width: 640px) {

@@ -3,8 +3,10 @@ import Image from "next/image";
 
 import NewsList from "@/app/_components/NewsList";
 import ButtonLink from "@/app/_components/ButtonLink";
-import { News } from "@/app/_libs/microcms";
-
+import { getNewsList } from "./_libs/microcms";
+import { TOP_NEWS_LIMIT } from "./_constants";
+//import { News } from "@/app/_libs/microcms";
+/*
 const data: {
   contents: News[] } = {
     contents: [
@@ -37,13 +39,16 @@ const data: {
       },
     ],
   };
+*/
 
 
+export default async function Home() {
 
-export default function Home() {
-
-  const sliceData = data.contents.slice(0,2);
+//  const sliceData = data.contents.slice(0,2);
 //  const sliceData: News = [];
+  const data = await getNewsList({
+    limit: TOP_NEWS_LIMIT,
+  });
 
   return (
     <>
@@ -63,7 +68,7 @@ export default function Home() {
 
     <section className={styles.news}>
       <h2 className={styles.newsTitle}>News</h2>
-      <NewsList news ={sliceData} />
+      <NewsList news ={data.contents} />
 
       <div className={styles.newsLink}>
         <ButtonLink href="/news">もっとみる</ButtonLink>
